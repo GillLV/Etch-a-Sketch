@@ -1,3 +1,35 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color : #F5F5F5;
+}
+
+
+@font-face{
+    font-family: PixelFontTitle;
+    src: url('resources/04B_30__.TTF');
+}
+
+@font-face{
+    font-family: PixelFontSub;
+    src: url('resources/PixelGameFont.ttf');
+}
+
+.title{
+ font-family: PixelFontTitle;
+ margin: 0px;
+}
+
+.tagline{
+ font-family: PixelFontSub;
+ font-size: 20px;
+}
+
+#numCellsLabel{
+font-family: PixelFontSub;
+}
+
 .divContainer {
     display: flex;
     flex-wrap: wrap;
@@ -6,4 +38,47 @@
     min-width: 640px;
     max-width: 640px;
     width: 640px;
+    border-top: 30px solid #c781a3;
+    border-left: 30px solid #c781a3;
+    border-right: 30px solid #b3698d;
+    border-bottom: 30px solid #b3698d;
+}
+
+.mainPage{
+    display:flex;
+    justify-content: center;
+    gap: 200px;
+
+}
+
+.controls
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#numCells{
+    width : 130px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    width: 200px;
+}
+
+.positioner{
+    min-height: 640px;
+    min-width : 200px;
+    max-width: 200px;
+    width: 200px;
 }

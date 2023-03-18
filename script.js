@@ -24,7 +24,7 @@ for (let i =0; i < numDiv; i++)
     div.className = "cells";
     div.style.minHeight = "38px"
     div.style.width = "38px";
-    div.style.border = "1px solid black";
+    div.style.border = "1px solid #808080";
     div.style.margin = "0px";
     div.style.padding = "0px";
 

@@ -6,7 +6,27 @@
         <link rel ="stylesheet" href = "style.css">
     </head>
     <body>
-        <div class = divContainer></div>
+        <h1 class="title">Etch-a-Sketch</h1>
+        <h3 class="tagline">Scribble to your heart's content</h3>
+        <div class = "mainPage">
+            <div class = "controls">
+                <div class = "setCellNum">
+                    <label for ="numCells" id="numCellsLabel">Enter cells per side:</label>
+                    <div class = "inputs">
+                        <input type="text" id="numCells" name = "CellNumber" placeholder = "Max 100"/>
+                        <input id = "submitNumCells" type = "button" value = "Submit">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button">Use colours</button>
+                    <button type="button">Use shader</button>
+                    <button type="button">Use Eraser</button>
+                    <button type="button">Clear</button>
+                </div>
+            </div>
+            <div class = divContainer></div>
+            <div class = positioner></div>
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
