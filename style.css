@@ -2,9 +2,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    background-color : #F5F5F5;
+    background-image: linear-gradient(45deg, #F5F5F5, #b897a6);
+    background-size: 400%;
+    height: 100vh;
+    animation: bg-animation 5s infinite alternate;
+    /*animation: gradient 16s linear infinite;*/
+    /*background-color : #F5F5F5;*/
 }
 
+
+@keyframes bg-animation{
+    0%  {background-position: left}
+    100% {background-position: right}
+}
 
 @font-face{
     font-family: PixelFontTitle;
@@ -19,21 +29,22 @@ body{
 .title{
  font-family: PixelFontTitle;
  margin: 0px;
+ color: #b3698d;
 }
 
 .tagline{
  font-family: PixelFontSub;
  font-size: 20px;
+ color: #b3698d;
 }
 
 #numCellsLabel{
 font-family: PixelFontSub;
+color: #b3698d;
 }
 
 .divContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
     min-height: 640px;
     min-width: 640px;
     max-width: 640px;
@@ -42,12 +53,13 @@ font-family: PixelFontSub;
     border-left: 30px solid #c781a3;
     border-right: 30px solid #b3698d;
     border-bottom: 30px solid #b3698d;
+    background-color: #F5F5F5;
 }
 
 .mainPage{
     display:flex;
     justify-content: center;
-    gap: 200px;
+    gap: 100px;
 
 }
 
@@ -58,11 +70,34 @@ font-family: PixelFontSub;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    align-self: center;
+
+    min-width: 250px;
+    min-height: 450px;
+    max-height: 450px;
+    /*background-color: #edd8e0;*/
+
+    border: 10px solid #c781a3;
+    background-color: #F5F5F5;
 }
 
+.heart{
+    padding:none;
+    margin: none;
+}
 
 #numCells{
     width : 130px;
+    border: 2px solid #b3698d;
+    border-radius: 5px;
+}
+
+#numCells:focus{
+    width: 130px;
+    outline: none;
+    border: 2px solid #b3698d;
+    border-radius: 5px;
 }
 
 .buttons{
@@ -74,11 +109,39 @@ font-family: PixelFontSub;
 
 button{
     width: 200px;
+    border-radius: 5px;
+    background: linear-gradient(to right,#e3ccd4 , #a8517b);
+    border: 3px solid  transparent;
+    box-shadow: 1px 100px #e0c5d1 inset;
+    background-origin:  border-box;
+
+    color: #b3698d;
+}
+
+button:hover{
+    box-shadow: none;
+    color: white;
+}
+
+#submitNumCells{
+    border-radius: 5px;
+    background: linear-gradient(to right,#e3ccd4 , #a8517b);
+    border: 3px solid  transparent;
+    box-shadow: 1px 100px #e0c5d1 inset;
+    background-origin:  border-box;
+
+    color: #b3698d;
+}
+
+#submitNumCells:hover{
+    box-shadow: none;
+    color: white; 
 }
 
 .positioner{
     min-height: 640px;
-    min-width : 200px;
-    max-width: 200px;
-    width: 200px;
+    min-width : 250px;
+    max-width: 250px;
+    width: 250px;
 }
+
